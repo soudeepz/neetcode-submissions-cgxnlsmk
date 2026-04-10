@@ -1,0 +1,21 @@
+class Solution {
+    /**
+     * @param {string} s
+     * @param {string} t
+     * @return {boolean}
+     */
+    isAnagram(s, t) {
+        //let s_array = s.split('');
+        //let t_array = t.split('');
+
+        let s_sorted = s.split('').sort().join('');
+        let t_sorted = t.split('').sort().join('');
+
+        if (s_sorted === t_sorted) {
+            return true;
+        }
+
+        return false;
+
+    }
+}
