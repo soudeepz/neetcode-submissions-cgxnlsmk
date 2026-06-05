@@ -1,0 +1,11 @@
+from typing import List
+
+def read_integers() -> List[int]:
+    string_input = input()
+    string_list = string_input.split(",")
+    print(string_list)
+
+# do not modify the code below
+print(read_integers())
+print(read_integers())
+print(read_integers())
